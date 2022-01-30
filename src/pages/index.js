@@ -1,9 +1,9 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import * as styles from "../styles/hero.module.css"
 
-export default function Home() {
+export default function Home({ data }) {
   return (
     <Layout>
       <div
@@ -87,8 +87,8 @@ export default function Home() {
           <div className="uk-width-2xlarge uk-text-center high-index">
             <div>
               <h2>Scale your business with a website design that is thoughtfully crafted</h2>
-              <p class="uk-white">Hungry Ram provides exceptional customer support, reliable web hosting, and maintenance for your website. Our website is designed to deliver a better user experience for your customers.</p>
-              <a href="https://calendly.com/hungry-ram" class="uk-button uk-button-primary">Book a call</a>
+              <p className="uk-white">Hungry Ram provides exceptional customer support, reliable web hosting, and maintenance for your website. Our website is designed to deliver a better user experience for your customers.</p>
+              <a href="https://calendly.com/hungry-ram" className="uk-button uk-button-primary">Book a call</a>
             </div>
           </div>
         </div>
@@ -113,11 +113,43 @@ export default function Home() {
               <p>We've designed websites for clients all over the United States. There are many reasons our clients refer their friends and family to us. View our recent web design case studies for various businesses ranging from real estate to franchised restaurants.</p>
             </div>
           </div>
+          <div className="uk-child-width-1-3@s" data-uk-grid>
+            <div>
+                {data.portfolio.nodes.map((node) => {
+                    return (
+                      <Link to={"portfolio/" + node.slug } key={node.id}>{ node.frontmatter.title }</Link>
+                    )
+                })}
+            </div>
+          </div>
         </div>
       </div>
-
-
-
     </Layout>
   )
 }
+
+
+export const HomeQuery = graphql`
+query HomeQuery {
+  portfolio: allMdx(filter: {slug: {regex: "\\\\/portfolio/"}}) {
+    nodes {
+      frontmatter {
+        description
+        title
+      }
+      slug
+      id
+    }
+  },
+  blog: allMdx(filter: {slug: {regex: "\\\\/blog/"}}) {
+    nodes {
+      frontmatter {
+        description
+        title
+      }
+      slug
+      id
+    }
+  }
+}
+`

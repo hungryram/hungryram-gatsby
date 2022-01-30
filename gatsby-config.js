@@ -12,13 +12,28 @@ module.exports = {
     }, 
     "gatsby-plugin-react-helmet", 
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx", {
+    "gatsby-plugin-mdx", 
+    {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "pages",
         "path": "./src/pages/"
       },
       __key: "pages"
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "blog",
+        "path": `${__dirname}/blog`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "portfolio",
+        "path": `${__dirname}/portfolio`
+      }
     },
     {
       resolve: 'gatsby-plugin-google-fonts-v2',
