@@ -1,0 +1,16 @@
+.custom-top {
+    z-index: 1000;
+}
+
+.top-navbar {
+    border-bottom: 1px solid rgba(132,132,132,.15);
+    background: #fff;
+}
+
+div.top-navbar ul {
+    border-left: 1px solid rgba(132,132,132,.15);
+}
+
+.top-navbar ul li a {
+    min-height: 50px;
+}
