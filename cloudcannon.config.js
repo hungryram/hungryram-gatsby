@@ -20,34 +20,17 @@ module.exports = {
   collections_config: {
     people: {
       // Reads the contents of each file in this directory
-      path: 'content/people',
+      path: 'blog',
 
       // The URL template for items in this collection
-      url: '/people/{department|slugify}/[slug]/',
+      url: '/blog/[slug]/',
 
       // Tells CloudCannon this collection produces output files
       output: true,
 
       // CloudCannon collection-level configuration
-      name: 'Personnel',
+      name: 'Posts',
       _enabled_editors: ['data']
-    },
-    posts: {
-      // Reads the contents of each file in this directory
-      path: '_posts',
-
-      // How to parse the files in this collection
-      parser: 'front-matter',
-
-      // The URL function for items in this collection
-      url: (filePath, parsed, { filters }) => {
-        const year = new Date(parsed.date).getFullYear();
-        const slug = filters.slugify(parsed.title || '');
-        return `/posts/${year}/${slug}/`;
-      },
-
-      // Tells CloudCannon this collection produces output files
-      output: true
     },
     pages: {
       // Tells CloudCannon to navigate to this path for this collection
