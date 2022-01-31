@@ -18,7 +18,7 @@ module.exports = {
 
   // Populates the sidebar navigation and provides metadata for the editor
   collections_config: {
-    people: {
+    posts: {
       // Reads the contents of each file in this directory
       path: 'blog',
 
