@@ -2,12 +2,8 @@ collections_config:
   blog:
     path: blog
     name: Posts
-    output: false
+    output: true
     icon: people
-    add_options:
-      - name: Add post
-        icon: post_add
-        href: 'cloudcannon::editor/content/staff_members/.:extension🆕'
   portfolio:
     path: portfolio
     output: true
