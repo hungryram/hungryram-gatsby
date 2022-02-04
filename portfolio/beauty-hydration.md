@@ -15,6 +15,12 @@ short_description: ""
 title: Beauty Hydration
 title_tag: Beauty Hydration Web Design by Hungry Ram
 website_link: https://beautyhydration.com
+first_intro:
+  body: IDX can be a big investment, especially with new agents. So we decided to
+    build out a tool that still allow real estate professionals to manage their listings,
+    testimonials, and more! Our templates allow you to customize your branding and
+    personalize your website the way you want.
+  heading: The most versatile tool for agents who do not need IDX
 ---
 ### Overview
 

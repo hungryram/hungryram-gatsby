@@ -18,11 +18,11 @@ export default function ServiceTemplate({ data }) {
           <div className="uk-child-width-1-2@s" data-uk-grid>
             <div>
             {
-                intro1.heading &&
+                intro1.heading !== null &&
                 <h2>{intro1.heading}</h2>
               }
               {
-                intro1.body &&
+                intro1.body !== null &&
                 <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(intro1.body) }} />
               }
             </div>
