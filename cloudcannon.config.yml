@@ -3,3 +3,5 @@ collections_config:
     path: blog
   portfolio:
     path: portfolio
+editor:
+  default_path: /company/
