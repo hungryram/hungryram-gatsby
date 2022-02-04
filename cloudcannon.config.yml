@@ -1,17 +1,12 @@
 collections_config:
   blog:
     path: blog
-    icon: 
-    add_options:
-      - name: Live Preview
-        icon: public
-        href: 'cloudcannon::editor/content/staff_members/.:extension🆕'
   portfolio:
     path: portfolio
 collection_groups:
-  - heading: Blogging
+  - heading: Blog
     collections:
-      - blog
+      - posts
       - drafts
   - heading: Default Pages
     collections:
