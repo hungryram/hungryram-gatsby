@@ -1,1 +1,23 @@
 collections_config:
+  staff:
+    path: content/staff_members
+    output: false
+    sort:
+      key: surname
+    sort_options:
+      - key: surname
+      - key: surname
+        order: desc
+      - key: start_date
+        label: Longest employed first
+    subtext_key: role
+    image_key: profile_image
+    image_size: cover
+    singular_name: Staff Member
+    singular_key: staff_member
+    disable_add: false
+    icon: people
+    add_options:
+      - name: Add Staff Member
+        icon: person_add
+        href: 'cloudcannon::editor/content/staff_members/.:extension🆕'
