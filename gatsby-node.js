@@ -71,6 +71,15 @@ exports.createPages = async function ({ actions, graphql }) {
         }
       }
     }
+    locations: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/locations/"}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
   }
   
   `)
@@ -104,4 +113,14 @@ exports.createPages = async function ({ actions, graphql }) {
       context: { slug: slug },
     })
   })
+
+    // CREATE LOCATION DETAIL
+    data.locations.edges.forEach(edge => {
+      const slug = edge.node.fields.slug
+      actions.createPage({
+        path: "/locations" + slug,
+        component: path.resolve(`./src/templates/location-detail.js`),
+        context: { slug: slug },
+      })
+    })
 }
