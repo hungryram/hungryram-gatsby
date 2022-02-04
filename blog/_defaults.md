@@ -1,0 +1,11 @@
+---
+title:
+date:
+featured_image: 
+image_alt_tag: 
+categories:
+intro: 
+meta_description:
+title_tag:
+is_post: 
+---
