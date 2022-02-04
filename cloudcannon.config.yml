@@ -3,12 +3,3 @@ collections_config:
     path: blog
   portfolio:
     path: portfolio
-collection_groups:
-  - heading: Blog
-    collections:
-      - posts
-      - drafts
-  - heading: Default Pages
-    collections:
-      - pages
-      - portfolio
