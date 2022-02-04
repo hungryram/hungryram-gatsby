@@ -1,9 +1,20 @@
 collections_config:
   blog:
     path: blog
+    _inputs:
+      image_path:
+        type: image
+        comment: Helpful message here
+        options:
+          width: 90
+          height: 120
+    _select_data:
+      colors:
+        - Red
+        - Blue
   portfolio:
     path: portfolio
 editor:
   default_path: /company/
 paths:
-  uploads: .src/images
+  uploads: .src/image
