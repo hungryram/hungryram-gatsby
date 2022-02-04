@@ -1,0 +1,17 @@
+---
+client_name:
+date:
+featured_image:
+image_alt_tag:
+meta_description:
+meta_title:
+projects:
+review:
+short_description:
+title:
+title_tag:
+website_link:
+first_intro:
+  body:
+  heading:
+---
