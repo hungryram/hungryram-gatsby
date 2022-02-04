@@ -5,3 +5,5 @@ collections_config:
     path: portfolio
 editor:
   default_path: /company/
+paths:
+  uploads: .src/images
