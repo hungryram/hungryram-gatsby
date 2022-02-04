@@ -1,10 +1,10 @@
 ---
+title:
 categories:
 date:
 featured_image:
 image_alt_tag:
 is_post:
 meta_description:
-title:
 title_tag:
 ---
