@@ -7,7 +7,6 @@ import * as Styles from "../styles/servicedetail.module.css"
 
 export default function ServiceTemplate({ data }) {
   const frontMatter = data.markdownRemark.frontmatter
-
   const converter = new showdown.Converter();
 
   return (
@@ -17,10 +16,8 @@ export default function ServiceTemplate({ data }) {
         <div className="uk-container">
           <div className="uk-child-width-1-2@s" data-uk-grid>
             <div>
-              {
-                frontMatter.first_intro.heading &&
-                <h2>{frontMatter.first_intro.heading}</h2>
-              }
+              <h2>{data.markdownRemark.frontMatter.first_intro.heading}</h2>
+
               <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(frontMatter.first_intro.body) }} />
             </div>
             <div>
