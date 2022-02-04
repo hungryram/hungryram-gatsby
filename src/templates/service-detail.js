@@ -98,8 +98,8 @@ export default function ServiceTemplate({ data }) {
 }
 
 export const Service = graphql`
-query {
-  markdownRemark(fileAbsolutePath: {regex: "/services//"}) {
+query ($slug: String){
+  markdownRemark(fields: {slug: {eq: $slug}})  {
     id
     frontmatter {
       title
