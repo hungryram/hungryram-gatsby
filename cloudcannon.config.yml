@@ -1,16 +1,20 @@
 collections_config:
   blog:
     path: blog
-    name: Posts
-    output: true
-    icon: people
+    icon: 
     add_options:
-      - name: Add Post
-        href: "cloudcannon::editor/:collections_dir/:base_path/.:extension🆕"
-      - name: Add Draft
-        href: "cloudcannon::editor/:collections_dir/:base_path_draftify/.:extension🆕:base_path_postify/_defaults.:extension"
       - name: Live Preview
-        href: "[path]"
+        icon: public
+        href: 'cloudcannon::editor/content/staff_members/.:extension🆕'
   portfolio:
     path: portfolio
-    output: true
+collection_groups:
+  - heading: Blogging
+    collections:
+      - posts
+      - drafts
+  - heading: Default Pages
+    collections:
+      - pages
+      - staff
+      - features
