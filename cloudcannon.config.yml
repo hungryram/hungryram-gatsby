@@ -11,10 +11,9 @@ collections_config:
 collection_groups:
   - heading: Blogging
     collections:
-      - posts
+      - blog
       - drafts
   - heading: Default Pages
     collections:
       - pages
-      - staff
-      - features
+      - portfolio
