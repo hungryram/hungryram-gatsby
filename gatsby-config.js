@@ -12,7 +12,16 @@ module.exports = {
     }, 
     "gatsby-plugin-react-helmet", 
     "gatsby-plugin-sitemap",
-    "gatsby-plugin-mdx", 
+    "gatsby-transformer-remark",
+    "gatsby-plugin-image",
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-transformer-sharp`,
+      options: {
+        // The option defaults to true
+        checkSupportedExtensions: false,
+      },
+    },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
@@ -25,14 +34,28 @@ module.exports = {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "blog",
-        "path": `${__dirname}/blog`
+        "path": `${__dirname}/blog/`
       }
     },
     {
       resolve: 'gatsby-source-filesystem',
       options: {
         "name": "portfolio",
-        "path": `${__dirname}/portfolio`
+        "path": `${__dirname}/portfolio/`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "services",
+        "path": `${__dirname}/services/`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "locations",
+        "path": `${__dirname}/locations/`
       }
     },
     {

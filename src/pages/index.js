@@ -115,11 +115,7 @@ export default function Home({ data }) {
           </div>
           <div className="uk-child-width-1-3@s" data-uk-grid>
             <div>
-                {data.portfolio.nodes.map((node) => {
-                    return (
-                      <Link to={"portfolio/" + node.slug } key={node.id}>{ node.frontmatter.title }</Link>
-                    )
-                })}
+
             </div>
           </div>
         </div>
@@ -127,29 +123,3 @@ export default function Home({ data }) {
     </Layout>
   )
 }
-
-
-export const HomeQuery = graphql`
-query HomeQuery {
-  portfolio: allMdx(filter: {slug: {regex: "\\\\/portfolio/"}}) {
-    nodes {
-      frontmatter {
-        description
-        title
-      }
-      slug
-      id
-    }
-  },
-  blog: allMdx(filter: {slug: {regex: "\\\\/blog/"}}) {
-    nodes {
-      frontmatter {
-        description
-        title
-      }
-      slug
-      id
-    }
-  }
-}
-`

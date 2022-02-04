@@ -1,0 +1,8 @@
+.service-list {
+    transition: .3s;
+    border: 1px solid #eee;
+}
+
+.service-list:hover {
+    background: var(--accent-color);
+}

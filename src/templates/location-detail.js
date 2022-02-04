@@ -2,7 +2,6 @@ import { graphql } from "gatsby"
 import * as React from "react"
 import Layout from "../components/layout"
 import PageBanner from "../components/pagebanner"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default function PortfolioTemplate({ data }) {
   const frontMatter = data.markdownRemark.frontmatter
