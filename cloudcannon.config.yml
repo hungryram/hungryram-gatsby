@@ -9,9 +9,8 @@ collections_config:
         href: "cloudcannon::editor/:collections_dir/:base_path/.:extension🆕"
       - name: Add Draft
         href: "cloudcannon::editor/:collections_dir/:base_path_draftify/.:extension🆕:base_path_postify/_defaults.:extension"
+      - name: Live Preview
+        href: "[path]"
   portfolio:
     path: portfolio
     output: true
-    add_options:
-      - name: Live Preview
-        href: "[path]"
