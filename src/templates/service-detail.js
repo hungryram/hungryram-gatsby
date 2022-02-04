@@ -17,7 +17,6 @@ export default function ServiceTemplate({ data }) {
           <div className="uk-child-width-1-2@s" data-uk-grid>
             <div>
 
-              <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(frontMatter.first_intro.body) }} />
             </div>
             <div>
               <img src={frontMatter.image} alt={frontMatter.image_alt_tag} />
