@@ -12,54 +12,6 @@ export default function ServiceTemplate({ data }) {
   return (
     <Layout>
       <PageBanner pageTitle={frontMatter.title} />
-      <div className="uk-section">
-        <div className="uk-container">
-          <div className="uk-child-width-1-2@s" data-uk-grid>
-            <div>
-
-            </div>
-            <div>
-              <img src={frontMatter.image} alt={frontMatter.image_alt_tag} />
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div className="uk-section">
-        <div className="uk-container">
-          <div className="uk-child-width-1-2@s uk-flex-middle" data-uk-grid>
-            <div>
-              {
-                frontMatter.second_intro.heading &&
-                <h2>{frontMatter.second_intro.heading}</h2>
-              }
-              {
-                frontMatter.second_intro.body &&
-                <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(frontMatter.second_intro.body) }} />
-              }
-            </div>
-            <div>
-              <ul className="uk-list">
-                <li>
-                  <Link to="/services/websites-with-ssl-certificates/">
-                    <h4>Fully installed SSL certificate</h4>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services/responsive-web-design/">
-                    <h4>Responsive web design for all devices</h4>
-                  </Link>
-                </li>
-                <li>
-                  <Link to="/services/web-hosting/">
-                    <h4>Blazing-fast hosting</h4>
-                  </Link>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
 
       {
         frontMatter.blocks &&
