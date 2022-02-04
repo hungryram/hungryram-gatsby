@@ -18,11 +18,11 @@ export default function ServiceTemplate({ data }) {
           <div className="uk-child-width-1-2@s" data-uk-grid>
             <div>
             {
-                intro1.heading !== null &&
+                intro1.heading &&
                 <h2>{intro1.heading}</h2>
               }
               {
-                intro1.body !== null &&
+                intro1.body &&
                 <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(intro1.body) }} />
               }
             </div>
@@ -98,8 +98,8 @@ export default function ServiceTemplate({ data }) {
 }
 
 export const Service = graphql`
-query ($slug: String) {
-  markdownRemark(fields: {slug: {eq: $slug}}) {
+query {
+  markdownRemark(fileAbsolutePath: {regex: "/services//"}) {
     id
     frontmatter {
       title
@@ -126,6 +126,5 @@ query ($slug: String) {
     html
   }
 }
-
 
 `

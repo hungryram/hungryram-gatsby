@@ -18,17 +18,18 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
 exports.createPages = async function ({ actions, graphql }) {
   const { data } = await graphql(`
-    query {
-      allMarkdownRemark {
-        edges {
-          node {
-            fields {
-              slug
-            }
+  {
+    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blog/"}}) {
+      edges {
+        node {
+          fields {
+            slug
           }
         }
       }
     }
+  }
+  
   `)
   data.allMarkdownRemark.edges.forEach(edge => {
     const slug = edge.node.fields.slug
@@ -38,8 +39,44 @@ exports.createPages = async function ({ actions, graphql }) {
       context: { slug: slug },
     })
   })
+}
 
-  data.allMarkdownRemark.edges.forEach(edge => {
+exports.createPages = async function ({ actions, graphql }) {
+  const { data } = await graphql(`
+  {
+    portfolio: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/portfolio/"}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+    blog: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blog/"}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+    services: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/services/"}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+  
+  `)
+
+// CREATE PORTFOLIO DETAIL
+  data.portfolio.edges.forEach(edge => {
     const slug = edge.node.fields.slug
     actions.createPage({
       path: "/portfolio" + slug,
@@ -48,20 +85,22 @@ exports.createPages = async function ({ actions, graphql }) {
     })
   })
 
-  data.allMarkdownRemark.edges.forEach(edge => {
+  // CREATE BLOG DETAIL
+  data.blog.edges.forEach(edge => {
     const slug = edge.node.fields.slug
     actions.createPage({
-      path: "/services" + slug,
-      component: path.resolve(`./src/templates/service-detail.js`),
+      path: "/blog" + slug,
+      component: path.resolve(`./src/templates/blog-detail.js`),
       context: { slug: slug },
     })
   })
 
-  data.allMarkdownRemark.edges.forEach(edge => {
+  // CREATE SERVICES DETAIL
+  data.services.edges.forEach(edge => {
     const slug = edge.node.fields.slug
     actions.createPage({
-      path: "/locations" + slug,
-      component: path.resolve(`./src/templates/location-detail.js`),
+      path: "/services" + slug,
+      component: path.resolve(`./src/templates/service-detail.js`),
       context: { slug: slug },
     })
   })
