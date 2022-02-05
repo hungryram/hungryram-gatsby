@@ -1,7 +1,9 @@
 module.exports = {
   siteMetadata: {
     title: `hungryramgatsby`,
-    siteUrl: `https://www.yourdomain.tld`
+    siteUrl: `https://www.yourdomain.tld`,
+    twitter: `ramdettmer`,
+    image: `https://res.cloudinary.com/hungryram19/image/upload/v1631928088/hungryram/2021-hungry-ram-logo-black_hsw94p.png`
   },
   plugins: [
       {
@@ -59,15 +61,18 @@ module.exports = {
       }
     },
     {
-      resolve: 'gatsby-plugin-google-fonts-v2',
+      resolve: 'gatsby-source-filesystem',
       options: {
-        fonts: [
-          {
-            family: 'Poppins',
-            weights: ['300', '400', '500', '600', '700']
-          }
-        ]
+        "name": "content",
+        "path": `${__dirname}/content/pages/`
       }
-    }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "data",
+        "path": `${__dirname}/data/`
+      }
+    },
   ]
 };

@@ -1,11 +1,16 @@
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import * as React from "react"
 import Layout from "../components/layout"
 import PageBanner from "../components/pagebanner"
+import Seo from "../components/seo"
 
-export default function About() {
+export default function About({ data }) {
     return (
         <Layout>
+            <Seo 
+                title={data.about.frontmatter.title_tag}
+                description={data.about.frontmatter.meta_description}
+            />
             <PageBanner pageTitle="About" />
             <div className="uk-section">
                 <div className="uk-container">
@@ -39,3 +44,16 @@ export default function About() {
         </Layout>
     )
 }
+
+export const AboutData = graphql`
+query {
+    about: markdownRemark(fileAbsolutePath: {regex: "/.*content\\/pages\\/about/"}) {
+      frontmatter {
+        title_tag
+        meta_description
+        featured_image
+      }
+    }
+  }
+  
+`

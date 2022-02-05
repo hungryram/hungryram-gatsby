@@ -1,0 +1,13 @@
+{
+    "company": "Hungry Ram",
+    "contact_information": {
+        "name": "Ram Dettmer",
+        "office": "(657) 549-5082",
+        "cell": "951-454-2650",
+        "email": "ram@hungryram.com",
+        "address": "5511 Mirage St #1007",
+        "city": "New York",
+        "state": "NY",
+        "zip_code": "92887"
+    }
+}

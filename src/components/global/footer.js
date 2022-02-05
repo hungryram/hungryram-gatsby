@@ -1,6 +1,7 @@
 import * as React from "react";
 import * as footerContainer from "../../styles/footer.module.css"
 import { Link } from "gatsby"
+import data from "../../../data/profile"
 
 export default function Footer() {
     return (
@@ -14,18 +15,30 @@ export default function Footer() {
                         <div>
                             <h3 className="uk-h5">Contact Information</h3>
                             <ul className="uk-list">
-                                <li>
-                                    <a href="mailto:ram@hungryram.com">ram@hungryram.com</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:ram@hungryram.com">Office: (657) 549-5082</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:ram@hungryram.com">Direct: (951) 454-2650</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:ram@hungryram.com">5511 Mirage St #1007, Yorba Linda, CA 92887</a>
-                                </li>
+                                {
+                                    data.contact_information.email &&
+                                    <li>
+                                        <a href={`mailto: ${data.contact_information.email}`}>{data.contact_information.email}</a>
+                                    </li>
+                                }
+                                {
+                                    data.contact_information.office &&
+                                    <li>
+                                        <a href={`tel: ${data.contact_information.office}`}>Office: {data.contact_information.office}</a>
+                                    </li>
+                                }
+                                {
+                                    data.contact_information.cell &&
+                                    <li>
+                                        <a href={`tel: ${data.contact_information.cell}`}>Direct: {data.contact_information.cell}</a>
+                                    </li>
+                                }
+                                {
+                                    data.contact_information.address &&
+                                    <li>
+                                        <a href="">{data.contact_information.address}, {data.contact_information.city}, {data.contact_information.state} {data.contact_information.zip_code} </a>
+                                    </li>
+                                }
                             </ul>
                         </div>
                         <div>

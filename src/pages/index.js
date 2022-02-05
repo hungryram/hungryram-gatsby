@@ -2,6 +2,7 @@ import * as React from "react"
 import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import * as styles from "../styles/hero.module.css"
+import ServiceList from "../components/servicelist"
 
 export default function Home({ data }) {
   return (
@@ -101,9 +102,13 @@ export default function Home({ data }) {
               <h2>Our web design services</h2>
               <p>We provide high quality web design services for real estate and small businesses that are tailored to meet the specific needs of each client. Get a website that will help your business stand out from the competition.</p>
             </div>
+            <div>
+            </div>
           </div>
         </div>
       </div>
+      <ServiceList />
+
 
       <div className="uk-section">
         <div className="uk-container">
@@ -113,13 +118,50 @@ export default function Home({ data }) {
               <p>We've designed websites for clients all over the United States. There are many reasons our clients refer their friends and family to us. View our recent web design case studies for various businesses ranging from real estate to franchised restaurants.</p>
             </div>
           </div>
-          <div className="uk-child-width-1-3@s" data-uk-grid>
-            <div>
-
-            </div>
+          <div className="uk-child-width-1-3@s uk-margin-large-top" data-uk-grid>
+            {data.portfolio.nodes.map((node) => {
+              return (
+                <div>
+                  <Link to={"/portfolio" + node.fields.slug}>
+                    <img src={node.frontmatter.featured_image} alt="" />
+                  </Link>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
     </Layout>
   )
 }
+
+export const HomeData = graphql`
+query MyQuery {
+  portfolio: allMarkdownRemark(
+    filter: {fileAbsolutePath: {regex: "/portfolio/"}}
+    limit: 6
+    sort: {fields: frontmatter___date, order: DESC}
+  ) {
+    nodes {
+      fields {
+        slug
+      }
+      id
+      frontmatter {
+        featured_image
+      }
+    }
+  }
+  services: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/services/"}}) {
+    nodes {
+      fields {
+        slug
+      }
+      id
+      frontmatter {
+        featured_image
+      }
+    }
+  }
+}
+`

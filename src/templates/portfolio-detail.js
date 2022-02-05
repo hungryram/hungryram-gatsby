@@ -1,13 +1,14 @@
 import { graphql } from "gatsby"
 import * as React from "react"
 import Layout from "../components/layout"
+import Seo from "../components/seo"
 import PageBanner from "../components/pagebanner"
-import { MDXRenderer } from "gatsby-plugin-mdx"
 
 export default function PortfolioTemplate({ data }) {
   const frontMatter = data.markdownRemark.frontmatter
   return (
     <Layout>
+
       <PageBanner />
       <div className="uk-section">
         <div className="uk-container">
@@ -40,6 +41,8 @@ query ($slug: String) {
       featured_image
       client_name
       website_link
+      title_tag
+      meta_description
     }
     html
   }
