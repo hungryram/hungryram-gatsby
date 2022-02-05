@@ -5,10 +5,9 @@ collections_config:
       featured_image:
         type: image
         comment: Helpful message here
-    _select_data:
-      colors:
-        - Red
-        - Blue
+      is_post:
+        type: checkbox
+        comment: is this a blog?
   portfolio:
     path: portfolio
 editor:
