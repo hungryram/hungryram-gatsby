@@ -10,6 +10,8 @@ collections_config:
         comment: is this a blog?
   portfolio:
     path: portfolio
+  profile:
+    path: data/profile
 editor:
   default_path: /company/
 paths:
