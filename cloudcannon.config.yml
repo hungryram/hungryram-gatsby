@@ -2,12 +2,9 @@ collections_config:
   blog:
     path: blog
     _inputs:
-      image_path:
+      featured_image:
         type: image
         comment: Helpful message here
-        options:
-          width: 90
-          height: 120
     _select_data:
       colors:
         - Red
