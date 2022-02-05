@@ -11,7 +11,7 @@ collections_config:
   portfolio:
     path: portfolio
   profile:
-    path: data/profile
+    path: data/profile.json
 editor:
   default_path: /company/
 paths:
