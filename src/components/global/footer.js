@@ -42,36 +42,30 @@ export default function Footer() {
                             </ul>
                         </div>
                         <div>
-                            <h3 className="uk-h5">Choose a website</h3>
+                            <h3 className="uk-h5">Real Estate Websites</h3>
                             <ul className="uk-list">
                                 <li>
-                                    <a href="mailto:ram@hungryram.com">ram@hungryram.com</a>
+                                    <Link to="/services/real-estate-agent-websites/">Agent Websites</Link>
                                 </li>
                                 <li>
-                                    <a href="mailto:ram@hungryram.com">Office: (657) 549-5082</a>
+                                    <Link to="/services/real-estate-broker-websites/">Broker Websites</Link>
                                 </li>
                                 <li>
-                                    <a href="mailto:ram@hungryram.com">Direct: (951) 454-2650</a>
+                                    <Link to="/services/agent-idx-websites/">Agent IDX Websites</Link>
                                 </li>
                                 <li>
-                                    <a href="mailto:ram@hungryram.com">5511 Mirage St #1007, Yorba Linda, CA 92887</a>
+                                    <Link to="/services/broker-idx-websites/">Broker IDX Websites</Link>
                                 </li>
                             </ul>
                         </div>
                         <div>
-                            <h3 className="uk-h5">Contact Information</h3>
+                            <h3 className="uk-h5">Small Business Websites</h3>
                             <ul className="uk-list">
                                 <li>
-                                    <a href="mailto:ram@hungryram.com">ram@hungryram.com</a>
+                                    <Link to="/services/small-business-website-design/">Small Business Website Design</Link>
                                 </li>
                                 <li>
-                                    <a href="mailto:ram@hungryram.com">Office: (657) 549-5082</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:ram@hungryram.com">Direct: (951) 454-2650</a>
-                                </li>
-                                <li>
-                                    <a href="mailto:ram@hungryram.com">5511 Mirage St #1007, Yorba Linda, CA 92887</a>
+                                    <Link to="/services/ecommerce-website-design/">Ecommerce Website Design</Link>
                                 </li>
                             </ul>
                         </div>

@@ -74,5 +74,11 @@ module.exports = {
         "path": `${__dirname}/data/`
       }
     },
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: `https://hungryram.com`
+      }
+    }
   ]
 };
