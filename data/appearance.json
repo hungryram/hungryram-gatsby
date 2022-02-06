@@ -1,10 +1,10 @@
 {
-    "branding": {
-        "logo": "",
-        "favicon": ""
-    },
-    "colors": {
-        "primary_color": "",
-        "secondary_color": ""
-    }
+	"branding": {
+		"logo": "",
+		"favicon": ""
+	},
+	"colors": {
+		"primary_color": "#761212",
+		"secondary_color": "#6a6a6a"
+	}
 }
