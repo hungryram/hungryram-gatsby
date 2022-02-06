@@ -2,7 +2,7 @@ collections_config:
   blog:
     path: blog
     output: true
-    url: "blog/[slug]"
+    url: "/blog/[slug]"
     _inputs:
       featured_image:
         type: image
@@ -13,10 +13,12 @@ collections_config:
   portfolio:
     path: portfolio
     output: true
-    url: "portfolio/[slug]"
+    url: "/portfolio/[slug]"
   profile:
     path: data/
     _inputs:
+      main_logo:
+        type: image
       branding:
         favicon:
           type: image
