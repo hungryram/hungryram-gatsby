@@ -1,14 +1,6 @@
 {
-    "branding": [
-        {
-            "favicon": "",
-            "logo": ""
-        }
-    ],
-    "colors": [
-        {
-            "primary": "",
-            "secondary": ""
-        }
-    ]
+    "branding": {
+        "logo": "",
+        "favicon": ""
+    }
 }
