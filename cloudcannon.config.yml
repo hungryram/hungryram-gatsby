@@ -21,6 +21,10 @@ collections_config:
         type: image
       favicon:
         type: image
+      primary_color:
+        type: color
+      secondary_color:
+        type: color
 editor:
   default_path: /company/
 paths:
