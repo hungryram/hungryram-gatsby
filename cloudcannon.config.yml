@@ -1,6 +1,8 @@
 collections_config:
   blog:
     path: blog
+    output: true
+    url: "blog/[slug]"
     _inputs:
       featured_image:
         type: image
@@ -10,8 +12,16 @@ collections_config:
         comment: is this a blog?
   portfolio:
     path: portfolio
+    output: true
+    url: "portfolio/[slug]"
   profile:
     path: data/
+    _inputs:
+      branding:
+        favicon:
+          type: image
+        logo:
+          type: image
 editor:
   default_path: /company/
 paths:
