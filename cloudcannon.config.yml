@@ -17,13 +17,10 @@ collections_config:
   profile:
     path: data/
     _inputs:
-      main_logo:
+      logo:
         type: image
-      branding:
-        favicon:
-          type: image
-        logo:
-          type: image
+      favicon:
+        type: image
 editor:
   default_path: /company/
 paths:
