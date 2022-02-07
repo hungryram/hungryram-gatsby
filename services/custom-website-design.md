@@ -12,14 +12,13 @@ first_intro:
 
     Hungry Ram is dedicated to helping you build your brand so visitors can easily identify your business. Have more questions? Let's talk about how we can help.
   heading: Choosing a custom web design over templates
-search_engine_optimization:
-  meta_description: ""
-  title_tag: ""
 second_intro:
   body: 'Custom coded and built to be reliable and tailored to your business. Not
     only do we focus on the design of your site but also the importance of SEO. '
   heading: Hand-crafted websites from scratch
 title: Custom Website Design
+title_tag: Custom Web Design | Hungry Ram Web Design
+meta_description: Professionally designed and built A competitive industry like real estate is crucial when it comes to getting a unique design for your branding.
 ---
 ## Professionally designed and built
 

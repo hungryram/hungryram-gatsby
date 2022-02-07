@@ -18,6 +18,9 @@ second_intro:
     do not want to display other MLS properties.
   heading: Best for real estate professionals looking for an affordable website
 title: Real Estate Agent Websites
+title_tag: Real Estate Agent Websites | Hungry Ram Web Design
+meta_description: Get a professionally built real estate website While most real estate websites are built on WordPress
+
 ---
 ## Get a professionally built real estate website
 

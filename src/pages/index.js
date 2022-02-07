@@ -3,10 +3,67 @@ import { Link, graphql } from "gatsby"
 import Layout from "../components/layout"
 import * as styles from "../styles/hero.module.css"
 import ServiceList from "../components/servicelist"
+import Computer from "../images/computer.svg"
+import Performance from "../images/performance.svg"
+import Search from "../images/search.svg"
+import Seo from "../components/seo"
+import IndexSeo from "../../data/seo.json"
+
 
 export default function Home({ data }) {
+
+  const schemaMarkup =
+    {
+      "@context": "http://schema.org",
+      "@type": "ProfessionalService",
+      "image": "https://res.cloudinary.com/hungryram19/image/upload/v1606809089/hungryram/favicon_wbz1ng.jpg",
+      "priceRange": null,
+      "telephone": "657-549-5082",
+      "name": "Hungry Ram",
+      "logo": "https://res.cloudinary.com/hungryram19/image/upload/v1606809089/hungryram/favicon_wbz1ng.jpg",
+      "description": "Orange County web design for real estate professionals and small businesses.",
+      "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 33.87521697227549,
+          "longitude": -117.74577287142314
+      },
+      "url": "https://www.hungryram.com",
+      "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "657-549-5082",
+          "contactType": "customer service",
+          "email": "ram@hunryram.com",
+          "contactOption": "",
+          "areaServed": {
+              "@type": "GeoCircle",
+              "geoMidpoint": {
+                  "@type": "GeoCoordinates",
+                  "latitude": 33.87521697227549,
+                  "longitude": -117.74577287142314
+              },
+              "geoRadius": 1000
+          }
+      },
+      "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "United States",
+          "addressLocality": "Yorba Linda",
+          "addressRegion": "CA",
+          "postalCode": "92887",
+          "streetAddress": "5511 Mirage Street #1007"
+      }
+  }
+
+  const homeTitle = IndexSeo.title_tag;
+  const homeDescription = IndexSeo.meta_description;
+
   return (
     <Layout>
+      <Seo
+        title={homeTitle}
+        description={homeDescription.meta_description}
+        schemaMarkup={schemaMarkup}
+      />
       <div
         className="uk-background-norepeat uk-background-cover uk-background-center-right uk-section uk-section-large uk-flex uk-flex-middle"
         data-uk-height-viewport="offset-top: true;"
@@ -14,14 +71,14 @@ export default function Home({ data }) {
         <div className={`uk-position-cover ${styles.ukOverlayHero}`}></div>
         <div className="uk-width-1-1">
           <div className="uk-container uk-container-large uk-light">
-            <div className="uk-child-width-1-2 uk-grid-margin uk-grid uk-grid-stack" uk-grid>
+            <div className="uk-child-width-1-2 uk-grid-margin uk-grid uk-grid-stack" data-uk-grid>
               <div className="uk-grid-item-match uk-width-1-2@m">
                 <div className="uk-flex">
                   <div className="uk-tile uk-width-1-1 uk-background-norepeat uk-background-center-center">
                     <h1 className="uk-heading-xsmall uk-text-left">The best website platform for real estate and small business</h1>
                     <div className="uk-width-large">
                       <p>We help you create, and maintain connections with your customers through our trustworthy websites</p>
-                      <a href="/shop" className="uk-button uk-button-primary">Book a call</a>
+                      <Link href="/contact" className="uk-button uk-button-primary">Contact</Link>
                     </div>
                   </div>
                 </div>
@@ -42,7 +99,7 @@ export default function Home({ data }) {
               <p>Hungry Ram delivers a better solution that gives our clients in real estate and small businesses the edge over their competitors. We adopted a new method called Jamstack that provides the fastest and most secure websites. With our efficiently built webites, our clients see an average of 20% increase in conversion rates when they use our website!</p>
               <p><strong>Let's take your business to the next level with a strong website</strong></p>
               <div>
-                <Link to="/real-estate" className="uk-button uk-button-primary">Real Estate</Link>
+                <Link to="/services" className="uk-button uk-button-primary">View Services</Link>
               </div>
             </div>
           </div>
@@ -60,19 +117,22 @@ export default function Home({ data }) {
           </div>
           <div className="uk-grid-small uk-child-width-1-3@s uk-margin-large-top" data-uk-grid>
             <div>
-              <div className="uk-card uk-card-body">
+              <div className="uk-card uk-card-body uk-text-center">
+                <img src={Computer} alt="" width="100" />
                 <h3 className="uk-h3 uk-text-strong">More Secure Than Traditional Websites</h3>
                 <p>Get the most out of your website with a secure site that will keep your website protected. Our websites are accessed only through SSL connections and static files!</p>
               </div>
             </div>
             <div>
-              <div className="uk-card uk-card-body">
+              <div className="uk-card uk-card-body uk-text-center">
+                <img src={Performance} alt="" width="100" />
                 <h3 className="uk-h3 uk-text-strong">More Secure Than Traditional Websites</h3>
                 <p>Get the most out of your website with a secure site that will keep your website protected. Our websites are accessed only through SSL connections and static files!</p>
               </div>
             </div>
             <div>
-              <div className="uk-card uk-card-body">
+              <div className="uk-card uk-card-body uk-text-center">
+                <img src={Search} alt="" width="100" />
                 <h3 className="uk-h3 uk-text-strong">More Secure Than Traditional Websites</h3>
                 <p>Get the most out of your website with a secure site that will keep your website protected. Our websites are accessed only through SSL connections and static files!</p>
               </div>
@@ -85,7 +145,7 @@ export default function Home({ data }) {
       <div className="uk-background-cover uk-height-large uk-flex uk-flex-center uk-flex-middle uk-position-relative" style={{ backgroundImage: `url("https://res.cloudinary.com/hungryram19/image/upload/v1628200056/hungryram/desktop2_igppbt.jpg")` }}>
         <div className={`uk-position-cover ${styles.ukOverlayHero}`}></div>
         <div className="uk-container uk-container-small uk-light">
-          <div className="uk-width-2xlarge uk-text-center high-index">
+          <div className="uk-text-center high-index">
             <div>
               <h2>Scale your business with a website design that is thoughtfully crafted</h2>
               <p className="uk-white">Hungry Ram provides exceptional customer support, reliable web hosting, and maintenance for your website. Our website is designed to deliver a better user experience for your customers.</p>
@@ -122,9 +182,11 @@ export default function Home({ data }) {
             {data.portfolio.nodes.map((node) => {
               return (
                 <div>
-                  <Link to={"/portfolio" + node.fields.slug}>
-                    <img src={node.frontmatter.featured_image} alt="" />
-                  </Link>
+                  <div className="uk-card uk-card-default">
+                    <Link to={"/portfolio" + node.fields.slug}>
+                      <img src={node.frontmatter.featured_image} alt={node.frontmatter.title} />
+                    </Link>
+                  </div>
                 </div>
               )
             })}
@@ -149,6 +211,7 @@ query MyQuery {
       id
       frontmatter {
         featured_image
+        title
       }
     }
   }

@@ -16,7 +16,7 @@ gallery:
 image_alt_tag: Luxury Real Estate Web Design
 meta_description: Yoori Park is based in Los Angeles and had a website redesign by
   Hungry Ram. The site is built using HUGO and Forestry.io for content management.
-meta_title: Yoori Park Luxury Real Estate Web design by Hungry Ram
+title_tag: Yoori Park Luxury Real Estate Web design by Hungry Ram
 portfolio:
 - Real Estate
 projects:

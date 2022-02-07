@@ -5,7 +5,7 @@ featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1628098039/
 image_alt_tag: Modern website design
 meta_description: Website design for Karina Crisp by Hungry Ram. The site is custom
   designed and is associated with Summit Realty Broker.
-meta_title: Karina Crisp Website Design by Hungry Ram
+title_tag: Karina Crisp Website Design by Hungry Ram
 projects:
 - Real Estate
 review: I've worked with several web designers in the past and Ram is by far the best

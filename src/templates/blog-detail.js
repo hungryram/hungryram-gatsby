@@ -3,6 +3,7 @@ import * as React from "react"
 import Layout from "../components/layout"
 import PageBanner from "../components/pagebanner"
 import showdown from "showdown"
+import Seo from "../components/seo"
 
 export default function BlogTemplate({ data }) {
   const { title } = data.blogpost.frontmatter
@@ -10,6 +11,10 @@ export default function BlogTemplate({ data }) {
 
   return (
     <Layout>
+      <Seo 
+        title={data.blogpost.frontmatter.title_tag}
+        description={data.blogpost.frontmatter.meta_description}
+      />
       <PageBanner pageTitle={title} />
       <div className="uk-section">
         <div className="uk-container">
@@ -28,7 +33,7 @@ export default function BlogTemplate({ data }) {
             <div className="uk-width-expand@s">
               <div>
                 <img src="https://res.cloudinary.com/hungryram19/image/upload/v1637540007/hungryram/newramdettmer.jpg" alt="" />
-                <div class="uk-margin-medium-top">
+                <div className="uk-margin-medium-top">
                   <h2 className="uk-h4">About Ram Dettmer</h2>
                   <p>Ram started his career in 2012 building websites for a variety of industries across the country. Primarily focused on real estate and small businesses, his work has been featured on IHomefinder, one of the largest IDX providers for real estate.</p>
                 </div>
@@ -61,6 +66,8 @@ query ($slug: String) {
       title
       featured_image
       intro
+      title_tag
+      meta_description
     }
     html
   }

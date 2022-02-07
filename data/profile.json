@@ -9,5 +9,15 @@
         "city": "New York",
         "state": "NY",
         "zip_code": "92887"
+    },
+    "social_media": {
+        "instagram": "https://www.instagram.com/ramdettmer/",
+        "facebook": "https://www.facebook.com/HungryRam/",
+        "twitter": "",
+        "pinterest": "",
+        "yelp": "https://www.yelp.com/biz/hungry-ram-yorba-linda",
+        "linkedin": "",
+        "tiktok": "",
+        "youtube": ""
     }
 }

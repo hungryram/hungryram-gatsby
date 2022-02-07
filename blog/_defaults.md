@@ -1,9 +1,0 @@
----
-title:
-categories:
-date:
-featured_image:
-image_alt_tag:
-meta_description:
-title_tag:
----

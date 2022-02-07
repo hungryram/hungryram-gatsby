@@ -5,7 +5,6 @@ featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1628098152/
 image_alt_tag: Medspa website design
 meta_description: View our case study for Beauty Hydration owned by Shelley Lashley,
   located in Los Angeles, CA.
-meta_title: ""
 projects:
 - Small Business
 review: I fired my web designer who took 5 months for the site. I found Ram through

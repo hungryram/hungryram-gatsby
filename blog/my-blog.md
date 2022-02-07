@@ -10,9 +10,8 @@ is_post: true
 meta_description: Wordpress has been the foundation for many small business owners
   when it comes to developing websites. Many agencies have built their business through
   Wordpress such as myself.
-meta_title: Hungry Ram - No More Wordpress
+title_tag: Hungry Ram - No More Wordpress
 title: Moving Away From Wordpress
-title_tag: Moving Away From Wordpress
 url: /blog/moving-away-from-wordpress
 ---
 Wordpress has been the foundation for many small business owners when it comes to developing websites. Many agencies have built their business through Wordpress such as myself.

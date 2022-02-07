@@ -5,7 +5,7 @@ featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1628098894/
 image_alt_tag: ""
 meta_description: Web design case study for Kalvin Tsui from Swaye Realty located
   in Walnut, CA.
-meta_title: ""
+
 projects:
 - Real Estate
 review: I'm glad I got a chance to work with Ram. Very prompt response. Looking forward

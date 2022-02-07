@@ -3,9 +3,7 @@ client_name: Pho Ha Plus Diamond Bar
 date: "2021-05-12T07:00:00Z"
 featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1631942389/hungryram/pho-ha-plus-diamondbar.jpg
 image_alt_tag: Pho Ha Plus Web Design
-meta_description: Read how we helped a small franchise restaurant improve their website
-  user experience and get more traffic.
-meta_title: ""
+meta_description: "Pho Ha Plus case study and how we sped up the website by 30%"
 projects:
 - Small Business
 review: Our previous design was mainly using images. Ram was able to rebuild with

@@ -19,3 +19,21 @@ div.uk-card {
     z-index: 500;
     position: relative;
 }
+
+div.uk-card {
+    box-shadow: none;
+    border: 1px solid #ededed;
+    border-radius: 5px;
+}
+
+div.uk-card-default {
+    border: 20px solid white;
+    transition: .3s ease;
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 10%);
+    border-radius: 8px;
+}
+
+div.uk-card-default:hover {
+    box-shadow: 0 25px 98px 0 rgb(0 0 0 / 30%);
+    transition: .3s ease;
+}

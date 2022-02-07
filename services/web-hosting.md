@@ -14,7 +14,7 @@ first_intro:
   heading: The best web hosting for your website
 search_engine_optimization:
   meta_description: ""
-  title_tag: ""
+  
 second_intro:
   body: |-
     All our sites are built for performance and reliability. Of course, once the site is built it needs to be put on a reliable host. Netlify focuses on speed and performance and will deliver a blazing-fast website. This is the main reason we've decided to use them for hosting.
@@ -22,6 +22,8 @@ second_intro:
     Most websites are served up on traditional servers that have to make additional requests to the server. Netlify delivers websites through a CDN _(Content Delivery Network)_. In short - a CDN means faster internet for your customers.
   heading: Why our sites perform faster than most
 title: Web Hosting
+title_tag: The Best Web Hosting | Hungry Ram Web Design
+meta_description: Hungry Ram provides the best hosting through Netlify, trusted by companies like Facebook and Verizon.
 ---
 ## Our sites take the lead in speed and security
 

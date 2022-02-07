@@ -4,6 +4,9 @@ import Layout from "../components/layout"
 import PageBanner from "../components/pagebanner"
 import showdown from "showdown"
 import * as Styles from "../styles/servicedetail.module.css"
+import { BsArrowRight } from "@react-icons/all-files/bs/BsArrowRight"
+import Seo from "../components/seo"
+
 
 export default function ServiceTemplate({ data }) {
   const frontMatter = data.markdownRemark.frontmatter
@@ -12,12 +15,16 @@ export default function ServiceTemplate({ data }) {
 
   return (
     <Layout>
+      <Seo
+        title={data.markdownRemark.frontmatter.title_tag}
+        description={data.markdownRemark.frontmatter.title_tag}
+      />
       <PageBanner pageTitle={frontMatter.title} />
       <div className="uk-section">
         <div className="uk-container">
           <div className="uk-child-width-1-2@s" data-uk-grid>
             <div>
-            {
+              {
                 intro1.heading &&
                 <h2>{intro1.heading}</h2>
               }
@@ -25,6 +32,7 @@ export default function ServiceTemplate({ data }) {
                 intro1.body &&
                 <div dangerouslySetInnerHTML={{ __html: converter.makeHtml(intro1.body) }} />
               }
+              <Link data-uk-toggle="target: #modal-signup" className="uk-button uk-button-primary">Contact</Link>
             </div>
             <div>
               <img src={frontMatter.image} alt={frontMatter.image_alt_tag} />
@@ -50,17 +58,17 @@ export default function ServiceTemplate({ data }) {
               <ul className="uk-list">
                 <li>
                   <Link to="/services/websites-with-ssl-certificates/">
-                    <h4>Fully installed SSL certificate</h4>
+                    <h4> <BsArrowRight /> Fully installed SSL certificate</h4>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/responsive-web-design/">
-                    <h4>Responsive web design for all devices</h4>
+                    <h4> <BsArrowRight /> Responsive web design for all devices</h4>
                   </Link>
                 </li>
                 <li>
                   <Link to="/services/web-hosting/">
-                    <h4>Blazing-fast hosting</h4>
+                    <h4> <BsArrowRight /> Blazing-fast hosting</h4>
                   </Link>
                 </li>
               </ul>
@@ -105,6 +113,8 @@ query ($slug: String){
       title
       image
       image_alt_tag
+      title_tag
+      meta_description
       blocks {
         body
         heading

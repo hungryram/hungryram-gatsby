@@ -2,10 +2,15 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import PageBanner from "../../components/pagebanner"
 import { graphql, Link } from "gatsby"
+import Seo from "../../components/seo"
 
 export default function Portfolio({ data }) {
   return (
     <Layout>
+      <Seo
+        title="Portfolio | Hungry Ram Web Design"
+        description="View our customers who trust us to build their site and establish a long term relationship"
+      />
       <PageBanner pageTitle="Case Studies" />
       <div className="uk-section">
         <div className="uk-container">

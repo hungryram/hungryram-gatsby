@@ -21,4 +21,6 @@ third_intro:
     your site will generate more business on your website.
   heading: Web design services in Newport Beach
 title: Newport Beach
+title_tag: Newport Beach Web Design by Hungry Ram
+meta_description: Hungry Ram is a small web design studio proudly serving Newport Beach and surrounding areas. Our mission is to educate our clients on better ways to build websites.
 ---

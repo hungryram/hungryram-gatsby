@@ -12,10 +12,6 @@ first_intro:
 
     SSL Certificates and [responsive web designs](/services/responsive-web-design/) are some of the most important web standard rules when it comes to designing websites. At Hungry Ram, SSL Certificate is a must since our main focus is fast and secure websites. We ensure every single page is encrypted after launching the website.
   heading: Why SSL Certificates are needed to secure your website
-search_engine_optimization:
-  meta_description: Don't overlook the importance of SSL certificates. At Hungry Ram,
-    we focus on fast and secure websites and SSL is one of our main focus.
-  title_tag: SSL Certificates For Your Website - Hungry Ram
 second_intro:
   body: Have you ever visited a website and it said _not secure_ next to their domain
     name? That means their site is not fully secure or does not have an SSL certificate
@@ -24,6 +20,9 @@ second_intro:
     Hungry Ram.
   heading: Ensure your visitors safety through SSL certificates
 title: Websites with SSL Certificates
+meta_description: Don't overlook the importance of SSL certificates. At Hungry Ram,
+    we focus on fast and secure websites and SSL is one of our main focus.
+title_tag: SSL Certificates For Your Website - Hungry Ram
 ---
 ## Let Hungry Ram Secure Your Site
 

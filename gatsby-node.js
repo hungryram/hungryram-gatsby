@@ -80,6 +80,15 @@ exports.createPages = async function ({ actions, graphql }) {
         }
       }
     }
+    legal: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/legal/"}}) {
+      edges {
+        node {
+          fields {
+            slug
+          }
+        }
+      }
+    }
   }
   
   `)
@@ -123,4 +132,14 @@ exports.createPages = async function ({ actions, graphql }) {
         context: { slug: slug },
       })
     })
+
+        // CREATE LEGAL PAGE
+        data.legal.edges.forEach(edge => {
+          const slug = edge.node.fields.slug
+          actions.createPage({
+            path: "/legal" + slug,
+            component: path.resolve(`./src/templates/legal-detail.js`),
+            context: { slug: slug },
+          })
+        })
 }

@@ -3,8 +3,8 @@ client_name: Andrea Ellery
 date: "2020-07-10T07:00:00Z"
 featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1628098587/hungryram/real-estate-gateway-house_i0pf84.jpg
 image_alt_tag: Real Estate Web Design in California
-meta_description: ""
-meta_title: ""
+meta_description: "Find out how we built the website for a brokerage integrated with IDX"
+title_tag: Real Estate Gateway Case Study | Hungry Ram Web Design
 projects:
 - Real Estate
 review: I would recommend Ram. The site was built super fast and he was updating my

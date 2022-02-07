@@ -3,13 +3,14 @@ client_name: Monica Sanchez
 date: "2021-09-12T07:00:00Z"
 featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1639591025/hungryram/Untitled-4_gldreg.jpg
 image_alt_tag: KA Intimacy web design
-meta_description: ""
+meta_description: "Find out how we built KA Intimacy using Shopify"
+title_tag: KA Intimacy Case Study
 projects:
 - Small Business
-review: ""
+review: 
 short_description: ""
 title: KA Intimacy
-title_tag: ""
+
 website_link: https://ka-intimacy.com
 ---
 ## Project Overview

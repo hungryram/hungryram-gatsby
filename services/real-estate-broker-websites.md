@@ -19,6 +19,8 @@ second_intro:
   heading: Your brokerage website built on the latest development tools
 title: Real Estate Broker Websites
 video: https://res.cloudinary.com/hungryram19/video/upload/v1628187465/hungryram/admin2_lzlrvt.mp4
+title_tag: Real Estate Broker Websites | Hungry Ram Web Design
+meta_description: Easily scale your brokerage We utilize a development architecture called jamstack to build our powerful broker websites.
 ---
 ## Easily scale your brokerage
 We utilize a development architecture called [jamstack](/blog/why-i-use-jamstack/) to build our powerful websites. By doing this, we have full control over our websites unlike Wordpress. Need custom features added? No problem. We can add custom features to your admin portal if you need it more personalized. We want your business to do well with our websites so you can count on us to keep it running.

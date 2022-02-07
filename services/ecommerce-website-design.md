@@ -21,6 +21,8 @@ second_intro:
     things are running smoothly.
   heading: Tools to manage your business
 title: Ecommerce Website Design
+title_tag: Ecommerce Web Design | Hungry Ram Web Design
+meta_description: The best e-commerce platform for managing sales and products With store management, you’ll be able to keep track of your customer’s online orders.
 ---
 ## The best e-commerce platform for managing sales and products
 With store management, you’ll be able to keep track of your customer’s online orders and the state of the order. Organize products through flexible collections and track your inventory when items are constantly purchased.

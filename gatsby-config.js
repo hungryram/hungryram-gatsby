@@ -75,10 +75,17 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        "name": "legal",
+        "path": `${__dirname}/legal/`
+      }
+    },
+    {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: `https://hungryram.com`
       }
-    }
+    },
   ]
 };

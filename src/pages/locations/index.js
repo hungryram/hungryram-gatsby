@@ -2,10 +2,15 @@ import * as React from "react"
 import Layout from "../../components/layout"
 import PageBanner from "../../components/pagebanner"
 import { graphql, Link } from "gatsby"
+import Seo from "../../components/seo"
 
 export default function Locations({ data }) {
     return (
         <Layout>
+            <Seo
+                title="Areas We Served | Hungry Ram Web Design"
+                description="View location areas that Hungry Ram primarily serves."
+            />
             <PageBanner pageTitle="Locations" />
             <div className="uk-section">
                 <div className="uk-container uk-container-small uk-text-center">
@@ -18,7 +23,7 @@ export default function Locations({ data }) {
                             {data.allMarkdownRemark.nodes.map((node) => {
                                 return (
                                     <div>
-                                        <Link to={"/locations" + node.fields.slug}>
+                                        <Link to={"/locations" + node.fields.slug} key={node.id}>
                                             <h2 className="uk-h3">{node.frontmatter.title}</h2>
                                         </Link>
                                     </div>
@@ -34,10 +39,25 @@ export default function Locations({ data }) {
 
 export const LocationsData = graphql`
 {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/locations/"}}) {
+    allMarkdownRemark(
+      filter: {fileAbsolutePath: {regex: "/locations/"}}
+      sort: {fields: frontmatter___date, order: DESC}
+    ) {
       nodes {
         frontmatter {
           title
+          first_intro {
+            body
+            heading
+          }
+          second_intro {
+            body
+            heading
+          }
+          third_intro {
+            body
+            heading
+          }
         }
         fields {
           slug

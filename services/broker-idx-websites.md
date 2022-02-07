@@ -20,6 +20,8 @@ second_intro:
     make the best first impression on your brokerage.
   heading: Focus on what you do best
 title: Broker IDX Websites
+title_tag: Broker IDX Websites | Hungry Ram Web Design
+meta_description: What makes our website the best for your brokerage? Our websites are built differently than how a lot of agencies deliver to their clients.
 ---
 ## What makes our website the best for your brokerage?
 Our websites are built differently than how a lot of agencies deliver to their clients. Most real estate sites through large agencies like Agent Image are built through Wordpress. However, Wordpress is no longer the popular platform it once use to be. With new web development tools on the market, we make sure your business gets the most modern design and tools to grow your real estate brokerage website.

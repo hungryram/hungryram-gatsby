@@ -5,7 +5,7 @@ image_alt_tag: Lady holding phone
 is_post: true
 meta_description: What is Jamstack? Why is JAMstack better than traditional websites?
   This blog explains why freelancers should start using JAMstack.
-meta_title: Why Use JAMstack - Hungry Ram
+title_tag: Why Use JAMstack - Hungry Ram
 title: Why I use JAMstack
 ---
 ### JAMstack is the best way to build websites

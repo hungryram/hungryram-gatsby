@@ -5,7 +5,7 @@ featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1631942389/
 image_alt_tag: Modern interior design website
 meta_description: Website designed for an interior designer in Georgia by Hungry Ram.
   The website was custom designed with an architectural themed design.
-meta_title: CK Designs Kitchen and Bath Website Design by Hungry Ram
+title_tag: CK Designs Kitchen and Bath Website Design by Hungry Ram
 projects:
 - Small Business
 review: Ram helped me save money from my previous designer and still kept up with

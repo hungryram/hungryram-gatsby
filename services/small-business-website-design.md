@@ -17,6 +17,8 @@ second_intro:
     online presence. It's your business' first impression on a new and existing customer.
   heading: Why your small business needs a website
 title: Small Business Website Design
+title_tag: Small Business Web Design | Hungry Ram Web Design
+meta_description: Most small business websites are built on WordPress. We know WordPress can be overkill for your website. Which is why we provide the best websites for small businesses.
 ---
 ## There's a reason clients refer us
 

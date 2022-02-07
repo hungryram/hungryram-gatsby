@@ -5,7 +5,6 @@ featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1631942389/
 image_alt_tag: Lauren Renteria Web Design
 meta_description: Find out how we moved Laurens website from Shopify to Snipcart using
   HUGO and Forestry for managing her website.
-meta_title: ""
 projects:
 - Small Business
 review: Ram knew and accomplished exactly what I was looking for in my website! The

@@ -4,7 +4,7 @@ featured_image: https://res.cloudinary.com/hungryram19/image/upload/v1628214786/
 is_post: true
 meta_description: Stop using Wordpress and move over to a static website generator.
   Get better ranking, speed, and SEO. Get rid of additional plugins from Wordpress.
-meta_title: Static Sites Are Back - Hungry Ram
+title_tag: Static Sites Are Back - Hungry Ram
 title: Static Sites Are Back
 ---
 ### Why Go Back in Time?
