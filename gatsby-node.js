@@ -1,6 +1,6 @@
 const { createFilePath } = require(`gatsby-source-filesystem`);
 const path = require(`path`);
-
+const _ = require("lodash")
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions
@@ -17,31 +17,8 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 }
 
 exports.createPages = async function ({ actions, graphql }) {
-  const { data } = await graphql(`
-  {
-    allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/blog/"}}) {
-      edges {
-        node {
-          fields {
-            slug
-          }
-        }
-      }
-    }
-  }
-  
-  `)
-  data.allMarkdownRemark.edges.forEach(edge => {
-    const slug = edge.node.fields.slug
-    actions.createPage({
-      path: "/blog" + slug,
-      component: path.resolve(`./src/templates/blog-detail.js`),
-      context: { slug: slug },
-    })
-  })
-}
 
-exports.createPages = async function ({ actions, graphql }) {
+
   const { data } = await graphql(`
   {
     portfolio: allMarkdownRemark(filter: {fileAbsolutePath: {regex: "/portfolio/"}}) {
@@ -91,7 +68,11 @@ exports.createPages = async function ({ actions, graphql }) {
     }
   }
   
+  
   `)
+
+
+
 
 // CREATE PORTFOLIO DETAIL
   data.portfolio.edges.forEach(edge => {
