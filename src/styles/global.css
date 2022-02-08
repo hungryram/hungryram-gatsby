@@ -37,3 +37,8 @@ div.uk-card-default:hover {
     box-shadow: 0 25px 98px 0 rgb(0 0 0 / 30%);
     transition: .3s ease;
 }
+
+a.uk-navbar-toggle.uk-icon.uk-navbar-toggle-icon {
+    position: relative;
+    z-index: 10000;
+}

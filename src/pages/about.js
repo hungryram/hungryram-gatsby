@@ -69,7 +69,7 @@ export default function About({ data }) {
                                                     <h3 className="uk-card-title uk-margin-remove uk-h6">{node.frontmatter.client_name}</h3>
                                                     <h4 className="uk-h6 uk-dark uk-margin-remove">{node.frontmatter.title}</h4>
                                                     <div className="uk-margin-small-top">
-                                                        <Link to={node.fields.slug} className="accent">View case study</Link>
+                                                        <Link to={"/portfolio" + node.fields.slug} className="accent">View case study</Link>
                                                     </div>
                                                 </div>
                                             </div>
