@@ -65,7 +65,7 @@ export default function Home({ data }) {
         schemaMarkup={schemaMarkup}
       />
       <div
-        className="uk-background-norepeat uk-background-cover uk-background-center-right uk-section uk-section-large uk-flex uk-flex-middle"
+        className="uk-background-norepeat uk-background-cover uk-background-center-right uk-section uk-section-large uk-flex uk-flex-middle uk-position-relative"
         data-uk-height-viewport="offset-top: true;"
         style={{ backgroundImage: `url("https://res.cloudinary.com/hungryram19/image/upload/v1636968077/hungryram/business-meet.jpg")` }}>
         <div className={`uk-position-cover ${styles.ukOverlayHero}`}></div>
