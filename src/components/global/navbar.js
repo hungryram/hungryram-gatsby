@@ -17,15 +17,15 @@ export default function Navbar() {
                             <ul className="uk-navbar-nav">
                                 {
                                     social.instagram &&
-                                    <li><a href={social.instagram} target="_blank" title="Instagram">Ig</a></li>
+                                    <li><a href={social.instagram} target="_blank" rel="noopener" title="Instagram">Ig</a></li>
                                 }
                                 {
                                     social.facebook &&
-                                    <li><a href={social.facebook} target="_blank" title="Facebook">Fb</a></li>
+                                    <li><a href={social.facebook} target="_blank" rel="noopener" title="Facebook">Fb</a></li>
                                 }
                                 {
                                     social.yelp &&
-                                    <li><a href={social.yelp} target="_blank" title="Yelp">Yp</a></li>
+                                    <li><a href={social.yelp} target="_blank" rel="noopener" title="Yelp">Yp</a></li>
                                 }
                             </ul>
                         </div>
@@ -33,11 +33,11 @@ export default function Navbar() {
                             <ul className="uk-navbar-nav">
                                 {
                                     contact.office &&
-                                    <li><a href={`tel: ${contact.office}`} target="_blank" title="Office Phone">{contact.office}</a></li>
+                                    <li><a href={`tel: ${contact.office}`} target="_blank" rel="noopener" title="Office Phone">{contact.office}</a></li>
                                 }
                                 {
                                     contact.email &&
-                                    <li><a href={`mailto: ${contact.email}`} target="_blank" title="Email">{contact.email}</a></li>
+                                    <li><a href={`mailto: ${contact.email}`} target="_blank" rel="noopener" title="Email">{contact.email}</a></li>
                                 }
                             </ul>
                         </div>
@@ -100,7 +100,7 @@ export default function Navbar() {
                                     <li><Link to="/locations">Locations</Link></li>
                                     <li><Link to="/contact">Contact</Link></li>
                                     <div className="uk-navbar-item">
-                                        <li><a class="uk-button uk-button-primary" href="https://calendly.com/hungry-ram" target="_blank">Book a call</a></li>
+                                        <li><a class="uk-button uk-button-primary" href="https://calendly.com/hungry-ram" rel="noopener" target="_blank">Book a call</a></li>
                                     </div>
                                 </ul>
                             </div>
@@ -165,11 +165,6 @@ export default function Navbar() {
                                 </ul>
                             </li>
                             <li><Link to="/contact">Contact</Link></li>
-                            <li className="uk-nav-header"></li>
-                            <li className="uk-nav-divider"></li>
-                            <li className="uk-nav-header"></li>
-
-                            <li className="uk-nav-header"></li>
                         </ul>
                     </div>
                 </div>

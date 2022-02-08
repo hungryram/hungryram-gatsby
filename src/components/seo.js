@@ -51,11 +51,7 @@ export default function Seo({ title, description, schemaMarkup }) {
       ]}
     >
       {schemaMarkup &&
-
-
         <script type="application/ld+json">{JSON.stringify(schemaMarkup)}</script>
-
-
       }
     </Helmet>
   )

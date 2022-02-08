@@ -20,7 +20,7 @@ export default function Faq({ data }) {
                         {faq.general_faq.map((node) => {
                             return (
                                 <li>
-                                    <a className="uk-accordion-title" href="#">{node.question}</a>
+                                    <a className="uk-accordion-title" href="# ">{node.question}</a>
                                     <div className="uk-accordion-content">
                                         <p className="uk-margin-small-left">{node.answer}</p>
                                     </div>
@@ -38,7 +38,7 @@ export default function Faq({ data }) {
                         {faq.real_estate_faq.map((node) => {
                             return (
                                 <li>
-                                    <a className="uk-accordion-title" href="#">{node.question}</a>
+                                    <a className="uk-accordion-title" href="# ">{node.question}</a>
                                     <div className="uk-accordion-content">
                                         <p className="uk-margin-small-left">{node.answer}</p>
                                     </div>
@@ -56,7 +56,7 @@ export default function Faq({ data }) {
                         {faq.small_business_faq.map((node) => {
                             return (
                                 <li>
-                                    <a className="uk-accordion-title" href="#">{node.question}</a>
+                                    <a className="uk-accordion-title" href="# ">{node.question}</a>
                                     <div className="uk-accordion-content">
                                         <p className="uk-margin-small-left">{node.answer}</p>
                                     </div>

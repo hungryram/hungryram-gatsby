@@ -87,5 +87,11 @@ module.exports = {
         siteUrl: `https://hungryram.com`
       }
     },
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "372514063562316",
+      },
+    },
   ]
 };
